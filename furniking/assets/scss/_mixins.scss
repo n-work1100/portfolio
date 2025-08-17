@@ -1,0 +1,8 @@
+// coment
+
+@import "variables";
+
+@mixin container {
+	max-width: $conrainer-width;
+	margin: 0 auto;
+}
