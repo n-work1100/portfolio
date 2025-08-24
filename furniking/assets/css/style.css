@@ -115,13 +115,57 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Black.eot");
+  src: local("Mulish Black"), local("Mulish-Black"), url("../fonts/Mulish/Mulish-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Black.woff2") format("woff2"), url("../fonts/Mulish/Mulish-Black.woff") format("woff"), url("../fonts/Mulish/Mulish-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Medium.eot");
+  src: local("Mulish Medium"), local("Mulish-Medium"), url("../fonts/Mulish/Mulish-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish/Mulish-Medium.woff") format("woff"), url("../fonts/Mulish/Mulish-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Light.eot");
+  src: local("Mulish Light"), local("Mulish-Light"), url("../fonts/Mulish/Mulish-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish/Mulish-Light.woff") format("woff"), url("../fonts/Mulish/Mulish-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Bold.eot");
+  src: local("Mulish Bold"), local("Mulish-Bold"), url("../fonts/Mulish/Mulish-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish/Mulish-Bold.woff") format("woff"), url("../fonts/Mulish/Mulish-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-Regular.eot");
+  src: local("Mulish Regular"), local("Mulish-Regular"), url("../fonts/Mulish/Mulish-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish/Mulish-Regular.woff") format("woff"), url("../fonts/Mulish/Mulish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-SemiBold.eot");
+  src: local("Mulish SemiBold"), local("Mulish-SemiBold"), url("../fonts/Mulish/Mulish-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish/Mulish-SemiBold.woff") format("woff"), url("../fonts/Mulish/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 header.header {
   font-family: "Rubik";
+  overflow: hidden;
 }
 header.header .header__top {
   width: 100%;
@@ -191,6 +235,7 @@ header.header .container .lsa .logo a.logo__link img.logo__img {
 header.header .container .lsa form.search-form {
   display: flex;
   justify-content: start;
+  position: relative;
   margin-right: auto;
   width: 582px;
   border: 2px solid #7AC751;
@@ -200,10 +245,10 @@ header.header .container .lsa form.search-form .categories {
   color: #555555;
 }
 header.header .container .lsa form.search-form div input.search-form__query {
+  position: relative;
   padding: 15px 15px 14px 25px;
-  width: 400px;
+  width: 409px;
   margin-right: 10px;
-  border-right: 2px solid #E9E9E9;
   border-radius: 8px 0px 0px 8px;
 }
 header.header .container .lsa form.search-form div input.search-form__query::-moz-placeholder {
@@ -221,10 +266,30 @@ header.header .container .lsa form.search-form div select.search-form__categorie
   color: #555555;
 }
 header.header .container .lsa form.search-form div button.search-form__btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 55px;
   height: 100%;
   border: 2px solid #7AC751;
   background-color: #7AC751;
+}
+header.header .container .lsa form.search-form div button.search-form__btn-search::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../icons/search-glass.png");
+}
+header.header .container .lsa form.search-form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 170px;
+  width: 1px;
+  height: 100%;
+  background-color: #E9E9E9;
 }
 header.header .container .lsa .profile {
   display: flex;
@@ -242,7 +307,7 @@ header.header .container .lsa .profile .mod-mr0 {
 header.header .container .lsa .profile .mod-basket-count {
   position: relative;
 }
-header.header .container .lsa .profile .profile_mod-basket-count::after {
+header.header .container .lsa .profile .mod-basket-count::after {
   content: "4";
   position: absolute;
   top: -2px;
@@ -258,7 +323,7 @@ header.header .container .lsa .profile .profile_mod-basket-count::after {
   background-color: #7AC751;
 }
 header.header .main-menu {
-  background-color: #F7F8FA;
+  position: relative;
   text-transform: uppercase;
 }
 header.header .main-menu .container {
@@ -267,7 +332,12 @@ header.header .main-menu .container {
   display: flex;
   justify-content: start;
 }
-header.header .main-menu .container .all {
+header.header .main-menu .container .main-menu__wrapp {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp .all {
   position: relative;
   display: flex;
   padding: 26px 0px 23px 74px;
@@ -275,23 +345,192 @@ header.header .main-menu .container .all {
   height: 67px;
   background-color: #7AC751;
 }
-header.header .main-menu .container .all img.all-img {
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp .all img.all-img {
   position: absolute;
   top: 23px;
   left: 33px;
   width: 22px;
   height: 18px;
 }
-header.header .main-menu .container .all span.all-collections {
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp .all span.all-collections {
   font-weight: 500;
   font-size: 15px;
   line-height: 100%;
   letter-spacing: 1px;
   color: #ffffff;
 }
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp nav.sub-menu {
+  width: 260px;
+  background-color: #F7F8FA;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp nav.sub-menu ul.sub-menu__list {
+  list-style: none;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp nav.sub-menu ul.sub-menu__list li.sub-menu__item {
+  display: block;
+  padding: 11px 0px 15px 29px;
+  border-bottom: 1px #E3E3E3 solid;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp nav.sub-menu ul.sub-menu__list li.sub-menu__item a.sub-menu__link {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp nav.sub-menu ul.sub-menu__list li.sub-menu__item:last-child {
+  border-bottom: none;
+}
+header.header .main-menu .container .main-menu__wrapp .sub-menu-wrapp .sub-menu:last-child {
+  padding-bottom: 0;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp {
+  display: flex;
+  justify-content: start;
+  border-top: 11px solid #fff;
+  border-left: 12px solid #fff;
+  background-color: #F2FBFF;
+  width: 100%;
+  height: 450px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title {
+  margin-right: 20px;
+  padding-top: 73px;
+  padding-left: 47px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title .preview-top {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 22px;
+  color: #7AC751;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title h1.title {
+  position: relative;
+  margin-top: 7px;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 40px;
+  color: #000;
+  text-transform: capitalize;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title h1.title img.title__img {
+  position: absolute;
+  top: 78px;
+  right: -6px;
+  width: 192px;
+  height: 6px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title .rpeview-bottom {
+  margin-top: 33px;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 27px;
+  color: #838383;
+  text-transform: none;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-title button.btn-shop-now {
+  padding: 10px 18px;
+  margin-top: 35px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #7AC751;
+  color: #fff;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider {
+  margin-right: 6px;
+  padding-top: 36px;
+  min-width: 0;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider {
+  width: 374px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .image-slider__wrapper {
+  width: 374px;
+  height: 374px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .image-slider__wrapper .image-slider__slide {
+  width: 374px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image {
+  text-align: center;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image img {
+  max-width: 100%;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .swiper-pagination {
+  padding: 0;
+  margin-left: 130px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .swiper-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 9px;
+  border-radius: 666px;
+  background-color: #7AC751;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-slider .image-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 20px;
+  margin-right: 15px;
+  background-color: #7AC751;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 58px;
+  width: 98px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 91.5px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item .preview-right__img {
+  margin-bottom: 4px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item .preview-right__img img.preview-right-img {
+  width: 100%;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item .price-sumbol {
+  font-weight: 500;
+  font-size: 7px;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item .preview-right__price {
+  margin-bottom: 5px;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 12px;
+  color: #7AC751;
+}
+header.header .main-menu .container .main-menu__wrapp .menu-wrapp .preview-wrapp .preview-right .preview-right__item .preview-right__descr {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 9px;
+  text-transform: capitalize;
+  color: #555555;
+}
 header.header .main-menu .container nav.menu {
   display: flex;
   align-items: center;
+  height: 67px;
   padding: 25px 0 25px 82px;
 }
 header.header .main-menu .container nav.menu ul.menu__list {
@@ -310,4 +549,16 @@ header.header .main-menu .container nav.menu ul.menu__list li.menu-item a.menu-l
 }
 header.header .main-menu .container nav.menu ul.menu__list li.menu-item:last-child {
   margin-right: 0;
+}
+header.header .main-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 67px;
+  z-index: -1;
+  background-color: #F7F8FA;
+}
+
+.block_mt {
+  margin-top: 100px;
 }

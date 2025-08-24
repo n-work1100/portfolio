@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet" href="assets/css/fonts.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Furniking</title>
 </head>
@@ -51,16 +52,16 @@
 					</div>
 
 					<div>
-						<span class="categories">Categories</span>
+						<!-- <span class="categories">Categories</span> -->
 						<select class="search-form__categories" name="">
-							<option class="search-form__categories-item" value=""></option>
-							<option class="search-form__categories-item" value=""></option>
-							<option class="search-form__categories-item" value=""></option>
+							<option class="search-form__categories-item" value="">Categories</option>
+							<option class="search-form__categories-item" value="">Sofa</option>
+							<option class="search-form__categories-item" value="">Table</option>
 						</select>
 					</div>
 
 					<div>
-						<button class="search-form__btn-search"></button>
+						<button class="search-form__btn-search" type="submit"></button>
 					</div>
 				</form>
 
@@ -74,7 +75,6 @@
 
 		<div class="main-menu">
 			<div class="container">
-
 				<div class="main-menu__wrapp">
 					<div class="sub-menu-wrapp">
 						<div class="all">
@@ -113,13 +113,42 @@
 						<div class="preview-wrapp">
 							<div class="preview-title">
 								<div class="preview-top">TOP COLLECTIONS 2025</div>
-								<h1 class="title">We Serve Your <br> Dream Furniture</h1>
+								<h1 class="title">We Serve Your <br> Dream Furniture
+									<img src="assets/img/header/line.png" alt="line_png" class="title__img">
+								</h1>
 								<div class="rpeview-bottom">Get 50% off all products</div>
-								<button class="btn-shop-now">SHOP NOW</button>
+								<button class="btn-shop-now" type="submit">SHOP NOW</button>
 							</div>
 
 							<div class="preview-slider">
+								<div class="image-slider swiper-container">
+									<div class="image-slider__wrapper swiper-wrapper">
+										<div class="image-slider__slide swiper-slide">
+											<div class="image-slider__image">
+												<img src="assets/img/header/slider-img-1.png" alt="slider_img">
+											</div>
+										</div>
 
+										<div class="image-slider__slide swiper-slide">
+											<div class="image-slider__image">
+												<img src="assets/img/header/slider-img-4.jpg" alt="slider_img">
+											</div>
+										</div>
+
+										<div class="image-slider__slide swiper-slide">
+											<div class="image-slider__image">
+												<img src="assets/img/header/slider-img-1.jpg" alt="slider_img">
+											</div>
+										</div>
+
+										<div class="image-slider__slide swiper-slide">
+											<div class="image-slider__image">
+												<img src="assets/img/header/slider-img-2.jpg" alt="slider_img">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
 							</div>
 
 							<div class="preview-right">
@@ -128,7 +157,7 @@
 										<img src="assets/img/header/right-top.png" alt="preview-right-img">
 									</div>
 
-									<div class="preview-right__price">&#36; 120</div>
+									<div class="preview-right__price"><span class="price-sumbol">&#36;</span>120</div>
 									<div class="preview-right__descr">Office Desk Chair</div>
 								</div>
 
@@ -137,7 +166,7 @@
 										<img src="assets/img/header/right-middle.png" alt="preview-right-img">
 									</div>
 
-									<div class="preview-right__price">&#36; 180</div>
+									<div class="preview-right__price"><span class="price-sumbol">&#36;</span>180</div>
 									<div class="preview-right__descr">Home Alisa Sofa</div>
 								</div>
 
@@ -146,12 +175,11 @@
 										<img src="assets/img/header/right-bottom.png" alt="preview-right-img">
 									</div>
 
-									<div class="preview-right__price">&#36; 250</div>
+									<div class="preview-right__price"><span class="price-sumbol">&#36;</span>250</div>
 									<div class="preview-right__descr">Modern Chair</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -159,7 +187,9 @@
 
 		</div>
 	</header>
+	<div class="block_mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam tempore quia ratione quo, minima explicabo recusandae inventore vero magnam necessitatibus perspiciatis, facere numquam vel odio eligendi repellendus corporis quam.</div>
 
-	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
