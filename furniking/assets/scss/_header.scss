@@ -98,6 +98,7 @@ header.header {
 					color: $sub-color;
 					margin-right: 19px;
 					padding: 15px 0px 14px 0px;
+					background-color: #fff;
 					option.search-form__categories-item {
 						color: $sub-color;
 					}
@@ -402,7 +403,4 @@ header.header {
 		z-index: -1;
 		background-color: #F7F8FA;
 	}
-}
-.block_mt {
-	margin-top: 100px;
 }

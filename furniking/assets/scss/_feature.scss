@@ -1,0 +1,42 @@
+.block-feature {
+	padding-top: 65px;
+	.container {
+		.block-feature__wrapper {
+			display: flex;
+			justify-content: space-between;
+			.block-feature__item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.block-feature__img-wrapper {
+					margin-right: 15px;
+					.block-feature__img {
+						width: 100%;
+					}
+				}
+				.block-feature__info {
+					.block-feature__title {
+						font-family: $main-font;
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 26px;
+						color: $sub-color;
+					}
+					.block-feature__descr {
+						font-family: $main-font;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 26px;
+						color: #515151;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
