@@ -1,0 +1,126 @@
+.block-trending {
+	padding-top: 70px;
+	margin-bottom: 120px;
+	.container {
+		.block-trending__wrapper {
+			.block-trending__title {
+				@include block-title;
+			}
+			nav.block-trending__menu {
+				    display: flex;
+					align-items: center;
+					width: 572px;
+					margin: 0 auto;
+					padding-bottom: 73px;
+				ul.trending-menu {
+					display: flex;
+					justify-content: space-between;
+					list-style: none;
+					width: inherit;
+					li.trending-menu__item {
+						display: inline-block;
+						a.trending-menu__link {
+							font-family: $sub-font;
+							font-weight: 600;
+							font-size: 24px;
+							color: #c2c2c2;
+							text-decoration: none;
+						}
+						a.trending-menu__link:hover {
+							color: $main-color;
+						}
+					}
+				}
+			}
+			.block-trending__products {
+				.products-row {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 45px;
+					.products-row__item {
+						position: relative;
+						width: inherit;
+						.products-row-item-img {
+							width: inherit;
+							height: 288px;
+							margin-bottom: 18px;
+							img {
+								width: 100%;
+							}
+						}
+						.products-row-item-ind {
+							margin-bottom: 12px;
+							font-family: $sub-font;
+							font-weight: 400;
+							font-size: 14px;
+							color: #757575;
+							text-transform: uppercase;
+						}
+						.products-row-item-name {
+							margin-bottom: 17px;
+							font-family: $main-font;
+							font-weight: 400;
+							font-size: 20px;
+							color: $sub-color;
+						}
+						.products-row-item-footer {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							.footer-price {
+								.footer-price__now {
+									font-family: $sub-font;
+									font-weight: 700;
+									font-size: 18px;
+									color: $main-color;
+									margin-right: 9px;
+								}
+								.footer-price__before {
+									font-family: $sub-font;
+									font-weight: 600;
+									font-size: 18px;
+									color: #ccc;
+									text-decoration: line-through;
+								}
+							}
+							.footer-stars {
+								height: 11px;
+							}
+						}
+						.products-row-item-label {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							position: absolute;
+							top: 1px;
+							left: 1px;
+							font-family: $sub-font;
+							font-weight: 600;
+							font-size: 12px;
+							width: 45px;
+							height: 21px;
+							color: #fff;
+							background-color: #00B7F1;
+							border-bottom-right-radius: 6px;
+						}
+						.label-sale {
+							background-color: $main-color;
+						}
+						.b-none {
+							display: none;
+						}
+					}
+				}
+				.products-row:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

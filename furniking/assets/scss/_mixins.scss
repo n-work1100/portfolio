@@ -6,3 +6,16 @@
 	max-width: $conrainer-width;
 	margin: 0 auto;
 }
+
+@mixin block-title {
+	font-family: $sub-font;
+	font-weight: 700;
+	font-size: 36px;
+	color: $sub-color;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 45px;
+}
+
+
+
