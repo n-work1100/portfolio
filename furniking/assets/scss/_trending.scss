@@ -114,7 +114,50 @@
 				.products-row:last-child {
 					margin-bottom: 0;
 				}
+				.products-trending-slider {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.products-trending-slider__item {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-right: 14px;
+						width: 24px;
+						height: 24px;
+						border: solid 3px #ccc;
+						border-radius: 50%;
+						.products-trending-slider__item-inside {
+							width: 8px;
+							height: 8px;
+							border: solid 2px #ccc;
+							border-radius: 50%;
+							background-color: #ccc;
+						}
+					}
+					.products-trending-slider__item-active {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 24px;
+						height: 24px;
+						border: solid 3px $main-color;
+						border-radius: 50%;
+						.products-trending-slider__item-inside-active {
+							width: 8px;
+							height: 8px;
+							border: solid 2px $main-color;
+							border-radius: 50%;
+							background-color: $main-color;
+						}
+					}
+				}
+				
+				
+				
+				
 			}
+			
 		}
 	}
 }

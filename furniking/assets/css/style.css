@@ -818,3 +818,41 @@ header.header .main-menu::before {
 .block-trending .container .block-trending__wrapper .block-trending__products .products-row:last-child {
   margin-bottom: 0;
 }
+.block-trending .container .block-trending__wrapper .block-trending__products .products-trending-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-trending .container .block-trending__wrapper .block-trending__products .products-trending-slider .products-trending-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  width: 24px;
+  height: 24px;
+  border: solid 3px #ccc;
+  border-radius: 50%;
+}
+.block-trending .container .block-trending__wrapper .block-trending__products .products-trending-slider .products-trending-slider__item .products-trending-slider__item-inside {
+  width: 8px;
+  height: 8px;
+  border: solid 2px #ccc;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.block-trending .container .block-trending__wrapper .block-trending__products .products-trending-slider .products-trending-slider__item-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: solid 3px #7AC751;
+  border-radius: 50%;
+}
+.block-trending .container .block-trending__wrapper .block-trending__products .products-trending-slider .products-trending-slider__item-active .products-trending-slider__item-inside-active {
+  width: 8px;
+  height: 8px;
+  border: solid 2px #7AC751;
+  border-radius: 50%;
+  background-color: #7AC751;
+}

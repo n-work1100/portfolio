@@ -14,3 +14,4 @@ new Swiper('.image-slider', {
 		eventsTarget: ".image-slider"
 	}
 });
+
