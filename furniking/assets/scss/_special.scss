@@ -1,0 +1,99 @@
+.block-special {
+	padding-top: 99px;
+	margin-bottom: 200px;
+	.container { 
+		.block-special__wrapper {
+			h2.block-special__title {
+				@include block-title;
+			}
+			.block-special__flex {
+				display: flex;
+				justify-content: space-between;
+				.block-special__item {
+					position: relative;
+					width: 570px;
+					height: 249px;
+					img.block-special__item-bg {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+					.item-label {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: 1px;
+						right: 1px;
+						font-family: $sub-font;
+						font-weight: 600;
+						font-size: 12px;
+						width: 64px;
+						height: 23px;
+						color: #fff;
+						background-color: #00B7F1;
+						border-bottom-left-radius: 6px;
+					}
+					.label-sale {
+						background-color: $main-color;
+					}
+					.special-info {
+						position: absolute;
+						top: 28px;
+						left: 24px;
+						.special-info__title {
+							font-family: $sub-font;
+							font-weight: 600;
+							font-size: 22px;
+							margin-bottom: 11px;
+						}
+						.special-info__descr {
+							font-family: $sub-font;
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 18px;
+							margin-bottom: 20px;
+							color: #757575;
+						}
+						.special-info__price-btn {
+							display: flex;
+							justify-content: start;
+							.special-info__price {
+								margin-right: 19px;
+								.special-info__price-now {
+									font-family: $sub-font;
+									font-weight: 700;
+									font-size: 18px;
+									color: $main-color;
+									margin-right: 9px;
+								}
+								.special-info__price-before {
+									font-family: $sub-font;
+									font-weight: 600;
+									font-size: 18px;
+									color: #ccc;
+									text-decoration: line-through;
+								}
+							}
+							.special-info__btn {
+								
+							}
+						}
+					}
+
+				}
+			}
+			.countdown {
+				.countdown__item {
+					.countdown__style {
+
+					}
+					.coutndown__text {
+
+					}
+				}
+			}
+		}
+	}
+}
+

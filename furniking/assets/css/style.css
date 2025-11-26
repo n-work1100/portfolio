@@ -702,16 +702,6 @@ header.header .main-menu::before {
 
 .block-trending {
   padding-top: 70px;
-  margin-bottom: 120px;
-}
-.block-trending .container .block-trending__wrapper .block-trending__title {
-  font-family: "Mulish";
-  font-weight: 700;
-  font-size: 36px;
-  color: #555555;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 45px;
 }
 .block-trending .container .block-trending__wrapper nav.block-trending__menu {
   display: flex;
@@ -855,4 +845,91 @@ header.header .main-menu::before {
   border: solid 2px #7AC751;
   border-radius: 50%;
   background-color: #7AC751;
+}
+
+.block-special {
+  padding-top: 99px;
+  margin-bottom: 200px;
+}
+.block-special .container .block-special__wrapper h2.block-special__title {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 36px;
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+}
+.block-special .container .block-special__wrapper .block-special__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item {
+  position: relative;
+  width: 570px;
+  height: 249px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item img.block-special__item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .item-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 12px;
+  width: 64px;
+  height: 23px;
+  color: #fff;
+  background-color: #00B7F1;
+  border-bottom-left-radius: 6px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .label-sale {
+  background-color: #7AC751;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__title {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 11px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__descr {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  color: #757575;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn {
+  display: flex;
+  justify-content: start;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn .special-info__price {
+  margin-right: 19px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn .special-info__price .special-info__price-now {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 18px;
+  color: #7AC751;
+  margin-right: 9px;
+}
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn .special-info__price .special-info__price-before {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 18px;
+  color: #ccc;
+  text-decoration: line-through;
 }

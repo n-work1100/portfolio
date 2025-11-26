@@ -1,10 +1,9 @@
 .block-trending {
 	padding-top: 70px;
-	margin-bottom: 120px;
 	.container {
 		.block-trending__wrapper {
 			.block-trending__title {
-				@include block-title;
+				 
 			}
 			nav.block-trending__menu {
 				    display: flex;
@@ -152,10 +151,6 @@
 						}
 					}
 				}
-				
-				
-				
-				
 			}
 			
 		}
