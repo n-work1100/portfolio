@@ -703,6 +703,15 @@ header.header .main-menu::before {
 .block-trending {
   padding-top: 70px;
 }
+.block-trending .container .block-trending__wrapper .block-trending__title {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 36px;
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+}
 .block-trending .container .block-trending__wrapper nav.block-trending__menu {
   display: flex;
   align-items: center;
