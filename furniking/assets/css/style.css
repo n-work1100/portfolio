@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -250,9 +252,6 @@ header.header .container .lsa form.search-form div input.search-form__query {
   width: 409px;
   margin-right: 10px;
   border-radius: 8px 0px 0px 8px;
-}
-header.header .container .lsa form.search-form div input.search-form__query::-moz-placeholder {
-  color: #B0B0B0;
 }
 header.header .container .lsa form.search-form div input.search-form__query::placeholder {
   color: #B0B0B0;
@@ -904,26 +903,27 @@ header.header .main-menu::before {
 }
 .block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info {
   position: absolute;
-  top: 28px;
+  top: 33px;
   left: 24px;
 }
 .block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__title {
   font-family: "Mulish";
   font-weight: 600;
   font-size: 22px;
-  margin-bottom: 11px;
+  margin-bottom: 22px;
 }
 .block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__descr {
   font-family: "Mulish";
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #757575;
 }
 .block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn {
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 .block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn .special-info__price {
   margin-right: 19px;
@@ -942,3 +942,51 @@ header.header .main-menu::before {
   color: #ccc;
   text-decoration: line-through;
 }
+.block-special .container .block-special__wrapper .block-special__flex .block-special__item .special-info .special-info__price-btn .special-info__btn {
+  padding: 7px 9px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #7AC751;
+  cursor: pointer;
+}
+.block-special .container .block-special__wrapper .countdown {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+.block-special .container .block-special__wrapper .countdown .countdown__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 18px;
+  border-radius: 50%;
+  background-color: #7AC751;
+}
+.block-special .container .block-special__wrapper .countdown .countdown__item .countdown__style {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+}
+.block-special .container .block-special__wrapper .countdown .countdown__item .coutndown__text {
+  margin-top: 4px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+.block-special .container .block-special__wrapper .countdown .countdown__item:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

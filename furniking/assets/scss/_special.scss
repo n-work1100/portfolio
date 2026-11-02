@@ -39,25 +39,26 @@
 					}
 					.special-info {
 						position: absolute;
-						top: 28px;
+						top: 33px;
 						left: 24px;
 						.special-info__title {
 							font-family: $sub-font;
 							font-weight: 600;
 							font-size: 22px;
-							margin-bottom: 11px;
+							margin-bottom: 22px;
 						}
 						.special-info__descr {
 							font-family: $sub-font;
 							font-weight: 400;
 							font-size: 12px;
 							line-height: 18px;
-							margin-bottom: 20px;
+							margin-bottom: 16px;
 							color: #757575;
 						}
 						.special-info__price-btn {
 							display: flex;
 							justify-content: start;
+							align-items: center;
 							.special-info__price {
 								margin-right: 19px;
 								.special-info__price-now {
@@ -76,7 +77,15 @@
 								}
 							}
 							.special-info__btn {
-								
+								padding: 7px 9px;
+								font-family: $sub-font;
+								font-weight: 700;
+								font-size: 13px;
+								line-height: 1;
+								text-transform: uppercase;
+								color: #fff;
+								background-color: $main-color;
+								cursor: pointer;
 							}
 						}
 					}
@@ -84,13 +93,38 @@
 				}
 			}
 			.countdown {
+				display: flex;
+				align-items: center;
+				margin-top: 28px;
 				.countdown__item {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: 40px;
+					height: 40px;
+					margin-right: 18px;
+					border-radius: 50%;
+					background-color: $main-color;
 					.countdown__style {
-
+						font-family: $sub-font;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 1;
+						color: #fff;
 					}
 					.coutndown__text {
-
+						margin-top: 4px;
+						font-family: $sub-font;
+						font-weight: 700;
+						font-size: 7px;
+						line-height: 1;
+						text-transform: uppercase;
+						color: #fff;
 					}
+				}
+				.countdown__item:last-child {
+					margin-right: 0;
 				}
 			}
 		}
